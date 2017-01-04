@@ -12,6 +12,7 @@
 		7EB899E31E1D2610009A475B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E11E1D2610009A475B /* Main.storyboard */; };
 		7EB899E51E1D2610009A475B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E41E1D2610009A475B /* Assets.xcassets */; };
 		7EB899E81E1D2610009A475B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E61E1D2610009A475B /* LaunchScreen.storyboard */; };
+		7EB899F01E1D43C0009A475B /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7EB899E41E1D2610009A475B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB899E71E1D2610009A475B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EB899E91E1D2610009A475B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7EB899E41E1D2610009A475B /* Assets.xcassets */,
 				7EB899E61E1D2610009A475B /* LaunchScreen.storyboard */,
 				7EB899E91E1D2610009A475B /* Info.plist */,
+				7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */,
 			);
 			path = badinCLUBS;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB899E01E1D2610009A475B /* ViewController.swift in Sources */,
+				7EB899F01E1D43C0009A475B /* ClubDetailViewController.swift in Sources */,
 				7EB899DE1E1D2610009A475B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				7EB899EE1E1D2610009A475B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
