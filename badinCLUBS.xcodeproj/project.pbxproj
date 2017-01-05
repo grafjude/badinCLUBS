@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7EB899DE1E1D2610009A475B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899DD1E1D2610009A475B /* AppDelegate.swift */; };
-		7EB899E01E1D2610009A475B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899DF1E1D2610009A475B /* ViewController.swift */; };
 		7EB899E31E1D2610009A475B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E11E1D2610009A475B /* Main.storyboard */; };
 		7EB899E51E1D2610009A475B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E41E1D2610009A475B /* Assets.xcassets */; };
 		7EB899E81E1D2610009A475B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB899E61E1D2610009A475B /* LaunchScreen.storyboard */; };
 		7EB899F01E1D43C0009A475B /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */; };
+		7EB899F21E1D4E71009A475B /* ClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899F11E1D4E71009A475B /* ClubTableViewController.swift */; };
+		7EB899F41E1D4FFB009A475B /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB899F31E1D4FFB009A475B /* ClubTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EB899DA1E1D2610009A475B /* badinCLUBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = badinCLUBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB899DD1E1D2610009A475B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EB899DF1E1D2610009A475B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EB899E21E1D2610009A475B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EB899E41E1D2610009A475B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EB899E71E1D2610009A475B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EB899E91E1D2610009A475B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
+		7EB899F11E1D4E71009A475B /* ClubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTableViewController.swift; sourceTree = "<group>"; };
+		7EB899F31E1D4FFB009A475B /* ClubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				7EB899DD1E1D2610009A475B /* AppDelegate.swift */,
-				7EB899DF1E1D2610009A475B /* ViewController.swift */,
 				7EB899E11E1D2610009A475B /* Main.storyboard */,
 				7EB899E41E1D2610009A475B /* Assets.xcassets */,
 				7EB899E61E1D2610009A475B /* LaunchScreen.storyboard */,
 				7EB899E91E1D2610009A475B /* Info.plist */,
 				7EB899EF1E1D43C0009A475B /* ClubDetailViewController.swift */,
+				7EB899F11E1D4E71009A475B /* ClubTableViewController.swift */,
+				7EB899F31E1D4FFB009A475B /* ClubTableViewCell.swift */,
 			);
 			path = badinCLUBS;
 			sourceTree = "<group>";
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EB899E01E1D2610009A475B /* ViewController.swift in Sources */,
+				7EB899F21E1D4E71009A475B /* ClubTableViewController.swift in Sources */,
 				7EB899F01E1D43C0009A475B /* ClubDetailViewController.swift in Sources */,
+				7EB899F41E1D4FFB009A475B /* ClubTableViewCell.swift in Sources */,
 				7EB899DE1E1D2610009A475B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

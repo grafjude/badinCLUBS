@@ -9,18 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     var badinClubs = ["club 1", "club 2", "club 3", "club 4", "club 5", "club 6","club 7","club 8","club 9", "club 10" , "club 11"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return badinClubs.count
     }

@@ -3,64 +3,51 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Badin Clubs-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Club Table View Controller-->
+        <scene sceneID="ynh-I8-mnJ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="badinCLUBS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="I0f-7S-7jF" customClass="ClubTableViewController" customModule="badinCLUBS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fu6-jS-YFg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0WE-Hm-DQ3">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="jCs-Ib-aMz" style="IBUITableViewCellStyleDefault" id="1U9-59-mQ9">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1U9-59-mQ9" id="Tl9-LH-ZN0">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="badinclubstable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jCs-Ib-aMz">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="jYm-yO-EH1" kind="show" identifier="showClubDetail" id="740-Ta-rjx"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="lKr-Pd-T0E" customClass="ClubTableViewCell" customModule="badinCLUBS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lKr-Pd-T0E" id="b7V-f4-Std">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rML-gl-w2h">
+                                            <frame key="frameInset" minX="27" minY="11" width="113" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="DyZ-L7-IEQ"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1T7-BI-Rz6"/>
+                                    <outlet property="nameLabel" destination="rML-gl-w2h" id="7fq-dt-FXP"/>
+                                    <segue destination="jYm-yO-EH1" kind="show" identifier="showClubDetail" id="ND8-2v-Ykd"/>
                                 </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="0WE-Hm-DQ3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IAw-bz-Kgy"/>
-                            <constraint firstItem="0WE-Hm-DQ3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KdG-bQ-v7p"/>
-                            <constraint firstAttribute="trailing" secondItem="0WE-Hm-DQ3" secondAttribute="trailing" id="LWJ-vm-6W7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0WE-Hm-DQ3" secondAttribute="bottom" id="h4j-7c-BOQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Badin Clubs" id="toN-hz-UAS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I0f-7S-7jF" id="7Zn-YP-01o"/>
+                            <outlet property="delegate" destination="I0f-7S-7jF" id="9Mu-da-5Vz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bNF-7u-0vy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS5-xV-9O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="996" y="123.68815592203899"/>
         </scene>
         <!--Club Detail View Controller-->
         <scene sceneID="W0I-hc-Zhs">
@@ -74,23 +61,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XA-FQ-AfD">
-                                <frame key="frameInset" minX="16" minY="72" width="190" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHi-Fy-jjw">
+                                <frame key="frameInset" minX="16" minY="222" width="343" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-4Z-jwK">
+                                <frame key="frameInset" minX="16" minY="341" width="343" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpa-6P-4jt">
+                                <frame key="frameInset" minX="16" minY="460" width="343" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-vJ-Txh">
+                                <frame key="frameInset" minX="16" minY="103" width="343" height="111"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ybG-vJ-Txh" firstAttribute="centerX" secondItem="QCM-ZO-zyn" secondAttribute="centerX" id="2vi-yL-Biw"/>
+                            <constraint firstItem="q3K-4Z-jwK" firstAttribute="leading" secondItem="QCM-ZO-zyn" secondAttribute="leadingMargin" id="HWB-OU-2Up"/>
+                            <constraint firstItem="ybG-vJ-Txh" firstAttribute="leading" secondItem="QCM-ZO-zyn" secondAttribute="leadingMargin" id="Opr-3q-LSM"/>
+                            <constraint firstItem="q3K-4Z-jwK" firstAttribute="trailing" secondItem="QCM-ZO-zyn" secondAttribute="trailingMargin" id="QAf-X9-HS4"/>
+                            <constraint firstItem="ybG-vJ-Txh" firstAttribute="trailing" secondItem="QCM-ZO-zyn" secondAttribute="trailingMargin" id="bYU-74-BJm"/>
+                            <constraint firstItem="Jpa-6P-4jt" firstAttribute="centerX" secondItem="QCM-ZO-zyn" secondAttribute="centerX" id="gS9-eB-rKD"/>
+                            <constraint firstItem="Jpa-6P-4jt" firstAttribute="leading" secondItem="QCM-ZO-zyn" secondAttribute="leadingMargin" id="pG3-M4-dvr"/>
+                            <constraint firstItem="q3K-4Z-jwK" firstAttribute="centerX" secondItem="QCM-ZO-zyn" secondAttribute="centerX" id="tcT-i8-jTm"/>
+                            <constraint firstItem="rHi-Fy-jjw" firstAttribute="centerX" secondItem="QCM-ZO-zyn" secondAttribute="centerX" id="vyF-RO-BNC"/>
+                            <constraint firstItem="Jpa-6P-4jt" firstAttribute="trailing" secondItem="QCM-ZO-zyn" secondAttribute="trailingMargin" id="yYC-3R-1vp"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="clubLabelView" destination="7XA-FQ-AfD" id="NPc-q1-2lh"/>
+                        <outlet property="ClubFunctionLabel" destination="q3K-4Z-jwK" id="Nxc-jC-Not"/>
+                        <outlet property="ClubLeaderLabel" destination="rHi-Fy-jjw" id="4es-mB-cVz"/>
+                        <outlet property="ClubNameLabel" destination="ybG-vJ-Txh" id="3tU-8K-HKW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQ7-Mb-El7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2040.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1821.5999999999999" y="123.68815592203899"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="beo-iS-xYh">
@@ -103,12 +121,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jaI-Av-Zlg"/>
+                        <segue destination="I0f-7S-7jF" kind="relationship" relationship="rootViewController" id="ABc-jP-klX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BF-z8-fSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="214" y="124"/>
         </scene>
     </scenes>
 </document>

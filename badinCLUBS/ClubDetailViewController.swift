@@ -9,18 +9,31 @@
 import UIKit
 
 class ClubDetailViewController: UIViewController {
+    
+    @IBOutlet var ClubNameLabel: UILabel!
+    
+    @IBOutlet var ClubLeaderLabel: UILabel!
+    
+    @IBOutlet var ClubFunctionLabel: UILabel!
+    
+    
+    var labelName = " "
+    var labelLeader = " "
+    var labelFunction = " "
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ClubNameLabel.text = labelName
+        ClubLeaderLabel.text = labelLeader
+        ClubFunctionLabel.text = labelFunction
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    @IBOutlet var clubLabelView:UILabel!
-    var clubLabel = ""
     
  
 }
