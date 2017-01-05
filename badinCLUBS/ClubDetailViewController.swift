@@ -17,9 +17,9 @@ class ClubDetailViewController: UIViewController {
     @IBOutlet var ClubFunctionLabel: UILabel!
     
     
-    var labelName = " "
-    var labelLeader = " "
-    var labelFunction = " "
+    var labelName = ""
+    var labelLeader = ""
+    var labelFunction = ""
 
 
     override func viewDidLoad() {
