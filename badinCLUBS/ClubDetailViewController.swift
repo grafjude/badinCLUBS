@@ -8,8 +8,8 @@
 
 import UIKit
 
+
 class ClubDetailViewController: UIViewController {
-    
     
     
     @IBOutlet var ClubNameLabel: UILabel!
@@ -33,12 +33,16 @@ class ClubDetailViewController: UIViewController {
         ClubLeaderLabel.text = labelLeader
         ClubFunctionLabel.text = labelFunction
         ClubImageView.image = UIImage(named: labelImage)
-
+        
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    //button
     
     
  
