@@ -10,16 +10,20 @@ import UIKit
 
 class ClubDetailViewController: UIViewController {
     
+    
+    
     @IBOutlet var ClubNameLabel: UILabel!
     
     @IBOutlet var ClubLeaderLabel: UILabel!
     
     @IBOutlet var ClubFunctionLabel: UILabel!
     
+    @IBOutlet var ClubImageView: UIImageView!
     
     var labelName = ""
     var labelLeader = ""
     var labelFunction = ""
+    var labelImage = ""
 
 
     override func viewDidLoad() {
@@ -28,12 +32,14 @@ class ClubDetailViewController: UIViewController {
         ClubNameLabel.text = labelName
         ClubLeaderLabel.text = labelLeader
         ClubFunctionLabel.text = labelFunction
+        ClubImageView.image = UIImage(named: labelImage)
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
  
 }

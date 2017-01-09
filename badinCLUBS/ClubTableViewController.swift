@@ -10,11 +10,13 @@ import UIKit
 
 class ClubTableViewController: UITableViewController{
     
-    var clubNames = ["club 1", "club 2", "club 3", "club 4", "club 5", "club 6", "club 7", "club 8", "club 9", "club 10", "club 11"]
+    var clubNames = ["Badin Studio Club", "Civics Day Club", "Creative Writing Club", "Culinary Club", "DECA", "French Club", "INTERalliance", "JSA", "Spanish Club", "Spirit Club", "Student Council"]
     
-    var clubLeaders = ["club 1", "club 2", "club 3", "club 4", "club 5", "club 6", "club 7", "club 8", "club 9", "club 10", "club 11"]
+    var clubLeaders = ["Teacher: Mrs. Daniels", "Teachers: Mr. Mears and Mr. Keating", "Teacher: Mr. O'hara", "Teachers: Mr. Gretz and Mrs. Bierbaum", "Teachers: Mr. DeAngelo & Mr. McCabe", "Teacher: Mrs. McAdams", "Teachers: Mr. Memory & Mr. Gretz", "Teacher: Mr. Keating", "Teacher: Mrs. Oliver", "Teacher: Mrs. Suedkamp", "Teachere: Mrs. Keating"]
     
-    var clubFunctions = ["club 1", "club 2", "club 3", "club 4", "club 5", "club 6", "club 7", "club 8", "club 9", "club 10", "club 11"]
+    var clubFunctions = ["Badin Studio club is an organization that pubish's students artwork at Badin Highschool. ", "Civics day club was made to promote civics day at Badin Highschool.", "Creative writing is for students who want to express their feelings through writing. If you like writing, this is the club for you.", "Culinary club is for students who like food. If cooking or eating is your euphoria, you will love culinary club.", "DECA is the club for business students. In DECA, students compete all over the country in business competitions. Winners move on to higher competition. ", "club 6", "club 7", "club 8", "club 9", "club 10", "club 11"]
+    
+    var clubImages = ["artstudio.jpg", "civicsday.jpg", "writing.jpg", "culinary.jpg", "Deca.jpg", "frenchclub.jpg", "Interalliance.jpg", "JSA.jpg", "spanishclub.jpg", "spiritclub.jpg", "studentcouncil.jpg"]
     
 //    var clubImages = " "
 
@@ -109,6 +111,7 @@ class ClubTableViewController: UITableViewController{
                 destinationController.labelName = clubNames[indexPath.row]
                 destinationController.labelLeader = clubLeaders[indexPath.row]
                 destinationController.labelFunction = clubFunctions[indexPath.row]
+                destinationController.labelImage = clubImages[indexPath.row]
             }
         }
     }

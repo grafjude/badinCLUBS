@@ -11,6 +11,7 @@ import UIKit
 class ClubTableViewCell: UITableViewCell  {
 
     @IBOutlet var nameLabel: UILabel!
+    
 
     
     override func awakeFromNib() {
