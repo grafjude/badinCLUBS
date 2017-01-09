@@ -8,6 +8,7 @@
 
 import UIKit
 
+//new viewcontroller that displays club details
 
 class ClubDetailViewController: UIViewController {
     
@@ -42,8 +43,7 @@ class ClubDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    //button
-    
+
     
  
 }

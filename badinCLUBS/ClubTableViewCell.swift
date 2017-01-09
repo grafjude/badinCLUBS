@@ -4,7 +4,7 @@
 //
 //  Created by BHSRam8 on 1/4/17.
 //  Copyright © 2017 Jude Graf. All rights reserved.
-//
+//page made for table cells
 
 import UIKit
 

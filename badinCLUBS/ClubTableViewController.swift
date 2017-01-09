@@ -20,6 +20,8 @@ class ClubTableViewController: UITableViewController{
         print(tapCount)
     }
     
+    // arrays for clubs
+    
     var clubNames = ["Badin Studio Club", "Civics Day Club", "Creative Writing Club", "Culinary Club", "DECA", "French Club", "INTERalliance", "JSA", "Spanish Club", "Spirit Club", "Student Council"]
     
     var clubLeaders = ["Teacher: Mrs. Daniels", "Teachers: Mr. Mears and Mr. Keating", "Teacher: Mr. O'hara", "Teachers: Mr. Gretz and Mrs. Bierbaum", "Teachers: Mr. DeAngelo & Mr. McCabe", "Teacher: Mrs. McAdams", "Teachers: Mr. Memory & Mr. Gretz", "Teacher: Mr. Keating", "Teacher: Mrs. Oliver", "Teacher: Mrs. Suedkamp", "Teachere: Mrs. Keating"]
@@ -37,6 +39,7 @@ class ClubTableViewController: UITableViewController{
     
     var clubImages = ["artstudio.jpg", "civicsday.jpg", "writing.jpg", "culinary.jpg", "Deca.jpg", "frenchclub.jpg", "Interalliance.jpg", "JSA.jpg", "spanishclub.jpg", "spiritclub.jpg", "studentcouncil.jpg"]
     
+    //override functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
